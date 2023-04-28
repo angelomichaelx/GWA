@@ -7,10 +7,13 @@ with open("studentlist.txt", "r") as file:
     for line in file:   
 
 #Create two variables with empty and no initial values to which we will append the values after analyzing each line of the text.
-highest_gwa = None
-best_student = ""
+        highest_gwa = None
+        best_student = ""
 
 #create two part, one is for student and the second one is for their grades
 name, gwa = line.strip().split(" - ")
 gwa = float(gwa)
 
+#compute and pick the highest gwa in all 20 student
+if highest_gwa is None or gwa < highest_gwa:
+            highest_gwa = gwa
