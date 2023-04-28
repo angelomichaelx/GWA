@@ -17,3 +17,6 @@ gwa = float(gwa)
 #compute and pick the highest gwa in all 20 student
 if highest_gwa is None or gwa < highest_gwa:
             highest_gwa = gwa
+
+# the student who got the highest grade will be printed to the student who got the highest gwa
+best_student = name
